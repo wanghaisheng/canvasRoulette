@@ -1,0 +1,63 @@
+.turnplate_box {
+    width: 360px;
+    height: 360px;
+    margin: 180px auto 0;
+    position: relative;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.turnplate_box canvas {
+    position: absolute;
+    z-index: 10;
+}
+
+#myCanvas {
+    background-color: white;
+    border-radius: 50% !important;
+}
+
+#myCanvas {
+    transition: transform 6s;
+    -o-transform-origin: 50% 50%;
+    -ms-transform-origin: 50% 50%;
+    -moz-transform-origin: 50% 50%;
+    -webkit-transform-origin: 50% 50%;
+    transform-origin: 50% 50%;
+}
+
+.turnplatw_btn {
+    width: 26%;
+    height: 26%;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    position: absolute;
+    cursor: pointer;
+    background: radial-gradient(circle,#ffeb3b ,#FF9800);
+    outline: none;
+    z-index: 40;
+    border-radius: 50%;
+    font-size: 1.5rem;
+    color: #922e2e;
+    border: 5px solid #f1ce67;
+
+}
+.turnplatw_btn::before{
+    content:'';
+    position: absolute;
+    width:0%;
+    height:30%;
+    left:50%;
+    top:-70%;
+    z-index: 39;
+    transform: translateX(-50%) ;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-top: 0px solid transparent;
+    border-bottom: 30px solid #f1ce67;
+}
+.turnplatw_img {
+  height:100%;
+   width:100%
+}
